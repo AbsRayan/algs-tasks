@@ -19,7 +19,13 @@ def binary_search(a, elem_b, n):
             low = middle + 1
     return low
 
-
                 
+n, m = map(int, input().split())
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
 
+ans = []
+for i in range(m):
+    ans.append(str(binary_search(a, b[i], n)))
+print(" ".join(ans))
 
