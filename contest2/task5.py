@@ -1,8 +1,8 @@
 from typing import Optional
 
 class ListNode:
-    def __init__(self, data):
-        self.data = data
+    def __init__(self, val):
+        self.data = val
         self.next = None
 
 class Solution:
@@ -16,7 +16,7 @@ class Solution:
         current = ans
         
         while list1 and list2:
-            if list1.data  <= list2.data:
+            if list1.val  <= list2.val:
                 current.next = list1
                 list1 = list1.next
             else:
